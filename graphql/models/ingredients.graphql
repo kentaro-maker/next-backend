@@ -1,0 +1,13 @@
+# models/ingredients.graphql
+
+
+extend type Query {
+    ingredients: [Ingredient]! @all
+}
+
+
+type Ingredient {
+  id: ID!
+  name: String!
+  category: String!
+}

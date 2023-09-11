@@ -1,0 +1,11 @@
+extend type Query {
+    allMeals: [Meal!]! @paginate(defaultCount: 10)
+}
+
+type Meal {
+  id: ID!
+  title: String!
+  content: String!
+#   author: Meal! @belongsTo
+#   comments: [Comment!]! @hasMany
+}

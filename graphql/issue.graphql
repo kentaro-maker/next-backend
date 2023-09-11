@@ -1,0 +1,23 @@
+
+extend type Query {
+    issues: [Issue!]! @paginate
+}
+
+type Issue {
+    id: ID!
+    author_name: String!
+    author_gender: String!
+    author_yomi: String!
+    author_profile: String!
+    author_interpretation_name: String!
+    author_interpretation_profile: String!
+    script_text: [String!]!
+    script_yomi: [String!]!
+    classification: String!
+    anthology: String!
+    theme: String!
+    meaning: String!
+    interpretation: String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
